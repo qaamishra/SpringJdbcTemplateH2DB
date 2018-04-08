@@ -9,6 +9,8 @@ import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.env.Environment;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.sql.DataSource;
 
@@ -17,6 +19,7 @@ import javax.sql.DataSource;
 @PropertySource(value = "classpath:datasource.properties", ignoreResourceNotFound = false)
 public class SpringJDBCConfig {
 
+    private final Logger logger = LoggerFactory.getLogger(SpringJDBCConfig.class);
     @Autowired
     private Environment env;
 
