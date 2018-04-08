@@ -1,1 +1,1 @@
-# SpringJdbcTemplateH2DB
+# SpringJdbcTemplate with H2 database
